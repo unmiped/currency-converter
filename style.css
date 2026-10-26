@@ -2,6 +2,22 @@
     --bg: #000;
     --text: #e7e7e7;
     --muted-text: #ffffffbd;
+    --accent-1: #75c1ff;
+    --accent-2: #3ea8ff;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geo';
+  src: url('fonts/Geo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -9,4 +25,22 @@ body {
     padding: 0;
     background-color: var(--bg);
     color: var(--text);
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-logo {
+    width: 180px;
+}
+
+#header-text {
+    font-size: 100px;
+    font-family: 'Geo';
+    color: var(--accent-2);
 }
