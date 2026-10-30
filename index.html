@@ -18,14 +18,26 @@
         <div id="conversion-container" class="content-panel">
             <div id="convert-from" class="convert-from-to">
                 <label for="amount" class="conversion-labels">Amount</label>
-                <input type="number" id="convert-from-input" class="conversion-inputs" placeholder="1.00">
+                <div class="input-and-dropdown">
+                    <input type="number" id="convert-from-input" class="conversion-input" placeholder="1.00">
+                    <select name="currency" id="convert-from-currency" class="currency-dropdown">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
             </div>
 
             <button id="convert-btn">Convert</button>
 
             <div id="convert-to" class="convert-from-to">
                 <label for="result" class="conversion-labels">Result</label>
-                <input type="number" id="convert-to-input" class="conversion-inputs" placeholder="1.00">
+                <div class="input-and-dropdown">
+                    <input type="number" id="convert-to-input" class="conversion-input" placeholder="1.00">
+                    <select name="currency" id="convert-to-currency" class="currency-dropdown">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div id="quick-rates-container" class="content-panel">
